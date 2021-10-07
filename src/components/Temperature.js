@@ -14,7 +14,6 @@ const Temperature = () => {
             const API_KEY = `ae011add162146d7a9e00835210710`;
             const url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${search}&aqi=no`
             const response = await axios.get(url);
-            // const resJson = await response.json();
             // console.log(response.data);
             setCity(response.data);
         }
